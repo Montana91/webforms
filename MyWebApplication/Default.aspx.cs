@@ -13,5 +13,14 @@ namespace MyWebApplication
         {
 
         }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            string message = string.Format("Name:{0}  Last Name:{1}  Age: {2}  Anual Income: {3}",
+             txtName.Text, txtLastname.Text, txtage.Text, txtincome.Text);
+            ltmessage.Text = message;
+
+
+        }
     }
 }
